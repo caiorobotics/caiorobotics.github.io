@@ -2038,6 +2038,23 @@ input, select, textarea {
 
 		}
 
+/* Ensure the parent link stretches to contain the video */
+.thumb .image {
+    display: block; /* Important for the link to wrap the video correctly */
+    position: relative; /* If you have overlays, this helps */
+    overflow: hidden; /* If border-radius is applied, this clips content */
+}
+
+/* Add or modify for video thumbnails */
+.thumb video {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Important: Ensures the video covers the area without distorting aspect ratio */
+    border-radius: inherit; /* If your images have rounded corners, apply to video too */
+    /* Add any other styles that match your existing .thumb img styling */
+}
+
 /* Footer */
 
 	#footer .copyright {
