@@ -2054,6 +2054,12 @@ input, select, textarea {
     border-radius: inherit; /* If your images have rounded corners, apply to video too */
     /* Add any other styles that match your existing .thumb img styling */
 }
+/* Now, for the specific video, adjust its object-position */
+.bottom-focused-video-container video {
+    object-position: bottom; /* Aligns the bottom of the video with the bottom of its container */
+    /* You can also use percentages: object-position: 50% 100%; (horizontal center, vertical bottom) */
+    /* Or even pixel values: object-position: 0 100px; (0 from left, 100px from top) */
+}
 
 /* Footer */
 
